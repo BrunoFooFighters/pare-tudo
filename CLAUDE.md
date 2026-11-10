@@ -21,3 +21,6 @@ Canal do YouTube sobre cidades brasileiras, separado do Cine Comics. O Bruno pod
 ## Mídias pesadas
 - Áudio, vídeo e imagens grandes ficam no Google Drive, pasta **Pare Tudo**: https://drive.google.com/drive/folders/1vaR4iFqMuBx4UHDIwEt0BVN04o42sP8f
 - No andamento, registrar só onde estão.
+
+## Conversa
+- A cada três mensagens do Bruno, alertar para ele enviar `/compact`.
