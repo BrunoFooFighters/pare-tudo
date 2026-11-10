@@ -1,6 +1,14 @@
 # 1º vídeo: critério do ranking e fontes (proposta para aprovação)
 
-Status: **proposta**, aguardando aprovação do Bruno (10/11/2026). Nenhum número foi levantado ainda.
+Status: **aprovado** pelo Bruno em 10/11/2026 ("Aprovado. Pode iniciar."). Ranking calculado em `ranking.csv`; scripts em `calculo/`.
+
+## Ajustes feitos no cálculo (10/11/2026)
+- **Respostas padrão adotadas**: pesos iguais; RIDEs entram (e também a RAIDE Petrolina/Juazeiro, que é do mesmo tipo); motos entram na frota.
+- **Frota**: veículos com motor = total da Senatran menos reboque, semirreboque, side-car e bonde.
+- **Indicador C**: só trilhos **elétricos** (metrô, trem urbano, monotrilho e os VLTs elétricos do Rio e da Baixada Santista). Os VLTs do Nordeste (CBTU, Metrofor, Teresina) andam a diesel e parariam junto. Linhas atribuídas ao recorte que a ANPTrilhos usa (o TIC Trens conta para a RM de São Paulo, não para Jundiaí).
+- **Indicador D trocado**: a distância até a base exigiria coordenadas e rotas e não seria confiável. Virou **combustível armazenado dentro da região** (tancagem autorizada da ANP em bases de distribuição, terminais e refinarias, grupo "derivados e biocombustíveis"), em litros por veículo. Mede a mesma ideia: quanto de reserva existe perto.
+- **Sobreposições do IBGE**: a RM do Norte/Nordeste Catarinense saiu (seus municípios estão nas RMs de Joinville, Jaraguá do Sul e Planalto Norte, criadas pela LC 788/2021); a RM do Entorno do DF saiu (todos os 11 municípios estão na RIDE do DF); Timon fica na RIDE da Grande Teresina; Lagoa da Confusão fica na RM de Palmas. Colares, áreas de expansão e entornos metropolitanos não entram.
+- **Empates**: 41 regiões não têm trilho elétrico e dividem a posição média no indicador C (21º). Regiões sem armazenagem dividem a posição 4,5 no D.
 
 ## 1. Quem entra no ranking
 - As **50 regiões metropolitanas mais populosas**, pela composição oficial do IBGE (arquivo de 2025, corrigido em 16/06/2026) e pela população do Censo 2022.
