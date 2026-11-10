@@ -23,4 +23,4 @@ Canal do YouTube sobre cidades brasileiras, separado do Cine Comics. O Bruno pod
 - No andamento, registrar só onde estão.
 
 ## Conversa
-- A cada três mensagens do Bruno, alertar para ele enviar `/compact`.
+- A cada três mensagens do Bruno, alertar para ele enviar `/compact`. Contar desde o último `/compact` (ele zera a contagem) e avisar no fim da 3ª resposta, de forma visível.
