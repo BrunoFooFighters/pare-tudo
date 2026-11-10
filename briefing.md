@@ -1,50 +1,40 @@
-# Briefing: canal Pare Tudo
+# Briefing para a próxima sessão (10/11/2026)
 
-Cole este texto no início da conversa nova.
+Cole na nova conversa: **"Leia o `briefing.md` e o `andamento.md` do repositório pare-tudo e continue de onde parou."**
 
-## Contexto
-Pare Tudo é um canal novo do YouTube sobre cidades brasileiras, separado do Cine Comics. O dono é o Bruno. Repositório: github.com/BrunoFooFighters/pare-tudo (ler `CLAUDE.md`, `projeto.md` e `andamento.md` antes de começar). Mídias pesadas ficam no Google Drive, pasta "Pare Tudo" (https://drive.google.com/drive/folders/1vaR4iFqMuBx4UHDIwEt0BVN04o42sP8f).
+## O que é
+- **Pare Tudo**: canal do YouTube sobre cidades brasileiras. Repositório `BrunoFooFighters/pare-tudo`, push em `main`.
+- Regras no `CLAUDE.md`:
+  - dados reais com fonte em `fontes.md`;
+  - roteiro com 1.400 a 1.600 palavras;
+  - atualizar `andamento.md` e dar push a cada etapa;
+  - alertar o Bruno para mandar `/compact` a cada 3 mensagens dele.
+- Mídias ficam no Drive, na pasta **Pare Tudo**, subpasta `01-primeiro-video/`.
 
-## Estrutura base do título (o padrão do canal)
-"Se [X] ficasse sem [recurso], estas seriam as primeiras a parar — o ranking das 50 [unidades]"
+## Vídeo 1: combustível (`videos/01-combustivel/`)
+- **Tema:** ranking das 50 maiores regiões metropolitanas por vulnerabilidade à falta de combustível.
+- **Índice Pare Tudo:** média das posições em 4 indicadores (desempate pelo B):
+  - A: veículos por mil habitantes (Senatran set/2026 + Censo 2022);
+  - B: veículos por posto (ANP out/2026);
+  - C: km de trilho **elétrico** por milhão de habitantes (ANPTrilhos 2025);
+  - D: litros de combustível armazenado na região por veículo (tancagem ANP).
+- **Resultado:**
+  - Top 5: 1º Piracicaba, 2º Jundiaí, 3º Vale Europeu, 4º Sorocaba, 5º Joinville.
+  - Último (50º): Salvador.
+- **Arquivos:**
+  - `roteiro.md`: v1, 1.562 palavras. **Falta o Bruno revisar.**
+  - `narracao.txt`: 1.589 palavras, escrito como se fala, sem algarismos. É o texto para colar no VoiceStudio.
+  - `ranking.csv`
+  - `criterio-e-fontes.md`
+  - `calculo/rm.py` e `calculo/indice.py`
+- **Próximo vídeo:** e se faltasse energia elétrica?
 
-- [X]: o sistema ou serviço que falha (os postos de gasolina, a energia elétrica, a água encanada, a internet).
-- [recurso]: o que falta (combustível, energia, água, sinal). Quando o X já é o recurso, a frase fica "Se a energia elétrica acabasse".
-- [unidades]: o que é ranqueado. Exemplo: "das 50 maiores cidades do Brasil".
-- Sempre com "estas seriam as primeiras a parar" e o travessão antes de "o ranking das 50".
-
-Primeiro vídeo: "Se os postos de gasolina ficassem sem combustível, estas cidades seriam as primeiras a parar — o ranking das 50 maiores do Brasil"
-Segundo (sugestão): "Se a energia elétrica acabasse, estas cidades seriam as primeiras a parar — o ranking das 50 maiores do Brasil"
-Futuros possíveis: água encanada, internet e celular, gás de cozinha, transporte público.
-
-## Decisão em aberto: a unidade do ranking
-O Brasil tem 5.570 municípios (50 cidades é viável), mas só 26 estados + DF. Opções: cidades (50), capitais (27), estados + DF (27), regiões metropolitanas (~50), locais específicos (aeroportos, portos, hospitais). Recomendação: cidades, para manter o "50". O Bruno ainda não escolheu.
-
-## Formato do vídeo
-- ~10 minutos, roteiro de 1.400 a 1.600 palavras.
-- Ranking de 50 itens, contado do menos para o mais dependente (ou o inverso), com explicação do critério no início.
-- Narrado com a voz clonada do Bruno (ferramenta de voz provavelmente Speko; confirmar ferramenta e voz salva).
-
-## Regras de conteúdo
-- Dados reais e citados. Nada inventado. Toda cifra usada tem a fonte registrada em `fontes.md`.
-- Fontes candidatas: IBGE, Senatran/Denatran, ANP, ANTT (combustível); ONS, Aneel (energia); ANA, SNIS (água); Anatel (telecom).
-- Explicar o critério do ranking de forma simples e honesta, sem exagero sensacionalista.
-
-## Entregas por vídeo
-1. Roteiro (~10 min)
-2. Narração com a voz do Bruno
-3. Thumbnail 1280x720
-4. Material de postagem (título, descrição, tags)
-
-## Entregas únicas do canal
-- Banner 2560x1440 (área segura 1546x423)
-- Avatar 800x800
-
-## Pendências
-1. Bruno escolher a unidade do ranking e confirmar o título do 2º vídeo.
-2. Confirmar a ferramenta de voz e a voz clonada.
-3. Depois: propor o critério do ranking e a lista de dados com fontes, para aprovação, e só então escrever o roteiro do 1º vídeo.
-
-## Como trabalhar
-- Tudo fica salvo no repositório pare-tudo; ao fim de cada etapa atualizar `andamento.md`, commit e push em `main`.
-- Roteiros em `videos/<nome-do-video>/`.
+## Pendências, em ordem
+1. **Bruno revisa o roteiro.** Se mudar algo, refazer o `narracao.txt` junto.
+2. **Narração com a voz clonada no VoiceStudio.**
+   - Precisa de sessão **local** no PC do Bruno, porque a nuvem não alcança o programa. Não há conector do VoiceStudio, e a conta Speko não tem voz clonada.
+   - Como fazer: Claude Desktop → aba Code → sessão local na pasta `pare-tudo` → permitir computer use no VoiceStudio.
+   - Colar `narracao.txt`, gerar o áudio e salvar em `Pare Tudo/01-primeiro-video/`.
+3. **Thumbnail 1280x720, cartelas do ranking e texto de descrição** (tabela completa e fontes). Pode ser feito na nuvem ou localmente.
+4. **Montagem e render.** Sessão local.
+5. **Postagem no canal numa nova janela do Chrome.** Sessão local, com o **ok final do Bruno antes de publicar**.
