@@ -35,6 +35,6 @@ Cole na nova conversa: **"Leia o `briefing.md` e o `andamento.md` do repositóri
    - Precisa de sessão **local** no PC do Bruno, porque a nuvem não alcança o programa. Não há conector do VoiceStudio, e a conta Speko não tem voz clonada.
    - Como fazer: Claude Desktop → aba Code → sessão local na pasta `pare-tudo` → permitir computer use no VoiceStudio.
    - Colar `narracao.txt`, gerar o áudio e salvar em `Pare Tudo/01-primeiro-video/`.
-3. **Thumbnail 1280x720, cartelas do ranking e texto de descrição** (tabela completa e fontes). Pode ser feito na nuvem ou localmente.
+3. **Thumbnail 1280x720 e cartelas do ranking.** Pode ser feito na nuvem ou localmente. O texto de postagem v1 já está em `postagem.md` (falta o Bruno escolher o título; capítulos depois da montagem).
 4. **Montagem e render.** Sessão local.
 5. **Postagem no canal numa nova janela do Chrome.** Sessão local, com o **ok final do Bruno antes de publicar**.
