@@ -31,3 +31,6 @@ Escolha do Bruno: regiões metropolitanas (~50).
 - Confirmar a ferramenta de voz e a voz clonada. Em 10/11/2026 a conta do Speko conectada não tinha nenhuma voz clonada.
 - Decidir se o 2º vídeo também usa regiões metropolitanas (o título confirmado diz "cidades").
 - Link do canal do YouTube, se quiser comparar com o Cine Comics.
+
+## Voz
+- A voz clonada do Bruno fica no VoiceStudio. A narração parte de `narracao.txt` (texto na forma falada, sem algarismos nem siglas).
